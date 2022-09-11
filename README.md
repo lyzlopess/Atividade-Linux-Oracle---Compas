@@ -1,4 +1,4 @@
-# Atividade-Linux-Oracle-Compas
+# Atividade-Linux-Oracle-Compaas
 
 ## Pré requisitos
 
