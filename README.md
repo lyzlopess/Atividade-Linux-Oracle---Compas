@@ -35,3 +35,14 @@ Após a VM já instalada e com suas primeiras configurações já realizadas, é
 - Na aba *Root Password* escolher uma senha para o root.
 
 Após todos esses passos seguidos selecionar a opção "Beggin Installation"
+
+## Relação de confiança ##
+
+É importante seguir essas etapas para ser possível alcançar uma relação de confiança entre duas VMs utilizando o SSH.
+
+- Foi criada uma VM principal (Server) e outra secundária com as mesmas configurações citadas acima (Cliente).
+
+### Instalação SSH ###
+
+Usar o comando 'yum install openssh-server' para instalar o servidor SSH
+
