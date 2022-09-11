@@ -47,7 +47,7 @@ Após todos esses passos seguidos selecionar a opção "Beggin Installation"
 - Usar o comando `yum install openssh-server` para instalar o servidor SSH.
 - Após instalado reiniciá-lo usando `systemctl restart sshd.service`
 - Checar os status do SSH `systemctl status sshd.service`
-- Verificar o IP da máquina client e na máquina server digitar o comando `ssh root@192.168.0.107` para conectar as duas VMs, inserir a senha e sair `exit`
+- Verificar o IP da máquina client `ip a s` e na máquina server digitar o comando `ssh root@192.168.0.107` para conectar as duas VMs, inserir a senha e sair `exit`
 
 Após essas etapas, a máquina server estará conectada com a client. E agora será preciso criar a chave para se obter a relação de confiança.
 
@@ -56,6 +56,21 @@ Após essas etapas, a máquina server estará conectada com a client. E agora se
 - Utilizar o comando `cd .ssh/` irá mostrar o diretório onde a chave foi criada.
 - Utilizar o comando `ll` irá listar os aquivos.
 - Utilizar o comando `cat id_rsa.pub` para visualizar a chave gerada.
+
+Após isso, a chave estará gerada na máquina principal e será preciso a configuração da máquina secundária.
+
+### Configuração da chave na máquina Client ###
+
+
+- Utilizar o comando `ls -la` irá listar os arquivos e diretórios ocultos.
+- Utilizar o comando `cd .ssh/` irá entrar no diretório onde a chave foi criada.
+- É preciso copiar a chave já gerada na máquina principal para a máquina segundária usando o comando `scp id_rsa.pub root@192.168.0.107:roo/ .ssh/authorized_keys`
+- Confirmar se a chave foi copiada para a máquina secundária usando o comando `cat authorized_keys`
+
+Logo após, a chave estará copiada e será importante a verificação da máquina principal para saber se a relação de confiaça ocorreu funcionou.
+
+Para verificar basta inserir o comando `ssh 192.168.0.107` na máquina principal, se a máquina não solicitou a senha a relação de confiaça foi estabelecida.
+
 
 
 
