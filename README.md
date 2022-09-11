@@ -44,5 +44,19 @@ Após todos esses passos seguidos selecionar a opção "Beggin Installation"
 
 ### Instalação SSH ###
 
-Usar o comando `yum install openssh-server` para instalar o servidor SSH
+- Usar o comando `yum install openssh-server` para instalar o servidor SSH.
+- Após instalado reiniciá-lo usando `systemctl restart sshd.service`
+- Checar os status do SSH `systemctl status sshd.service`
+- Verificar o IP da máquina client e na máquina server digitar o comando `ssh root@192.168.0.107` para conectar as duas VMs, inserir a senha e sair `exit`
+
+Após essas etapas, a máquina server estará conectada com a client. E agora será preciso criar a chave para se obter a relação de confiança.
+
+- Utilizar o comando `ssh-keygen` na máquina para gerar a chave.
+- Utilizar o comando `ls -la` irá listar os arquivos e diretórios ocultos.
+- Utilizar o comando `cd .ssh/` irá mostrar o diretório onde a chave foi criada.
+- Utilizar o comando `ll` irá listar os aquivos.
+- Utilizar o comando `cat id_rsa.pub` para visualizar a chave gerada.
+
+
+
 
