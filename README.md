@@ -24,3 +24,14 @@
 Depois da VM pronta é preciso mudar algumas configurações padronizadas nela, sendo elas:
 - Abrir configurações>armazenamento>controladora: IDE e adicionar  a imagem ISO.
 - Abrir configurações>rede e escolher a opção "Modo Bridge".
+
+## Iniciação da VM ##
+
+Após a VM já instalada e com suas primeiras configurações já realizadas, é preciso seguir os seguintes passos para se obter sucesso na sua iniciação, sendo eles:
+- Selecionar a Linguagem desejada, manter a opção "english".
+- Na aba *Software Selection* selecionar a opção "Minimal Install".
+- Na aba *Network e Host*  ligar a *ethernet* para se obter conexão.
+- Na aba *Installation Destination* selecionar o disco.
+- Na aba *Root Password* escolher uma senha para o root.
+
+Após todos esses passos seguidos selecionar a opção "Beggin Installation"
