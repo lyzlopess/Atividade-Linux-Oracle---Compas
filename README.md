@@ -17,6 +17,10 @@
 - O terceiro passo é acrescentar um **disco rígido** e selecionar a opção "Criar um novo disco rígido virtual agora".
 - O quarto passo é escolher o **tipo de arquivo de disco rígido** e selecionar a opção VHD (Virtual Hard Disk).
 - O quinto passo é escolher se o arquivo contendo o disco rígido virtual deve crescer à medida em que é urilizado ou se ele deve ser criado já com o tamanho máximo, selecionar a opção "Dinamixamente alocado".
-- sexto passo é o **tamanho do arquivo**, insira o tamanho da imagem de disco virtual e disponhe de 50,00 GB.
+- O sexto passo é o **tamanho do arquivo**, insira o tamanho da imagem de disco virtual e disponhe de 50,00 GB.
 
+### Ajustes finais da VM ###
 
+Depois da VM pronta é preciso mudar algumas configurações padronizadas nela, sendo elas:
+- Abrir configurações>armazenamento>controladora: IDE e adicionar  a imagem ISO.
+- Abrir configurações>rede e escolher a opção "Modo Bridge".
