@@ -44,5 +44,5 @@ Após todos esses passos seguidos selecionar a opção "Beggin Installation"
 
 ### Instalação SSH ###
 
-Usar o comando 'yum install openssh-server' para instalar o servidor SSH
+Usar o comando `yum install openssh-server` para instalar o servidor SSH
 
