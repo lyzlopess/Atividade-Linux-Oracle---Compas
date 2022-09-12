@@ -64,7 +64,7 @@ Após isso, a chave estará gerada na máquina principal e será preciso a confi
 
 - Utilizar o comando `ls -la` irá listar os arquivos e diretórios ocultos.
 - Utilizar o comando `cd .ssh/` irá entrar no diretório onde a chave foi criada.
-- É preciso copiar a chave já gerada na máquina principal para a máquina segundária usando o comando `scp id_rsa.pub root@192.168.0.107:roo/ .ssh/authorized_keys`.
+- É preciso copiar a chave já gerada na máquina principal para a máquina segundária usando o comando `scp id_rsa.pub root@192.168.0.107:root/ .ssh/authorized_keys`.
 - Confirmar se a chave foi copiada para a máquina secundária usando o comando `cat authorized_keys`.
 
 Logo após, a chave estará copiada e será importante a verificação da máquina principal para saber se a relação de confiaça ocorreu funcionou.
